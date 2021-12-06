@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/site"
+    tools:context=".XRP">
+
+    <TextView
+        android:id="@+id/price"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.785$"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Top_buttons"
+        android:textStyle="italic"
+        android:text="XRP — криптовалютная платформа для платёжных систем, ориентированная на операциях с обменом валют без возвратных платежей"
+        />
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/price"
+        android:text="Цена за 1 токен:"/>
+
+    <LinearLayout
+        android:id="@+id/Top_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <Button
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/Buy_button"
+            android:id="@+id/Ethereum_Button"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eth"
+            />
+
+        <Button
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/Buy_button"
+            app:layout_constraintStart_toEndOf="@id/Ethereum_Button"
+            android:id="@+id/Bitcoin_Button"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BTC"/>
+
+        <Button
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/Buy_button"
+            app:layout_constraintStart_toEndOf="@id/Bitcoin_Button"
+            android:id="@+id/Dogecoin_Button"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doge"
+            />
+        <Button
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/green"
+            app:layout_constraintStart_toEndOf="@id/Dogecoin_Button"
+            android:id="@+id/XRP_Button"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XRP"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <Button
+            android:textStyle="bold"
+            android:id="@+id/openurl"
+            android:backgroundTint="@color/Bottom_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Buy/sell token on Crypto.com"/>
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
