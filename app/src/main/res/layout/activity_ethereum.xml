@@ -7,7 +7,6 @@
     android:background="@drawable/site"
     tools:context=".Ethereum">
 
-
     <TextView
         android:id="@+id/price"
         android:textColor="@android:color/white"
