@@ -19,7 +19,7 @@ class Ethereum : AppCompatActivity() {
         nextActivityButton = findViewById(R.id.Bitcoin_Button)
         nextActivityButton.setOnClickListener {
             val bitcoinIntent: Intent = Intent(this, Bitcoin::class.java)
-            startActivity(bitcoinIntent) }
+            startActivity(bitcoinIntent)}
         nextActivityButton2 = findViewById(R.id.Dogecoin_Button)
         nextActivityButton2.setOnClickListener {
             val dogecoinIntent: Intent = Intent(this, Dogecoin::class.java)
