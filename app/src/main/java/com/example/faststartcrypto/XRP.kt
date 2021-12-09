@@ -5,11 +5,13 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.example.faststartcrypto.Contacts
 
 private lateinit var nextActivityButton: Button
 private lateinit var nextActivityButton2: Button
 private lateinit var nextActivityButton3: Button
 private lateinit var openSite: Button
+private lateinit var opencontacts: Button
 
 class XRP : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,6 +38,10 @@ class XRP : AppCompatActivity() {
             val openUrlIntent = Intent(Intent.ACTION_VIEW, cryptoLink)
             startActivity(openUrlIntent)
         }
-
+        opencontacts = findViewById(R.id.Contacts_button)
+        opencontacts.setOnClickListener(){
+            val contactsIntent: Intent = Intent(this, Contacts::class.java)
+            startActivity(contactsIntent)
+        }
     }
 }

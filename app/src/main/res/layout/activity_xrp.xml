@@ -92,6 +92,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/layoutopenurl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -106,7 +107,17 @@
             android:layout_height="match_parent"
             android:text="Buy/sell token on Crypto.com"/>
     </LinearLayout>
-
+    <Button
+        app:layout_constraintBottom_toTopOf="@id/layoutopenurl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="#0000"
+        android:textStyle="italic"
+        android:id="@+id/Contacts_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contacts"
+        android:textColor="@color/white"></Button>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

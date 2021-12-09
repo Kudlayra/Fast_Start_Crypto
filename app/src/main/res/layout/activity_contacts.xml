@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.faststartcrypto.Contacts">
+
+
+
+        <ImageView
+            android:id="@+id/image_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/contacts"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"></ImageView>
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/text_phone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+79220086767"
+            android:textSize="50sp">
+        </TextView>
+        <TextView
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_phone"
+            android:layout_width="wrap_content"
+            android:id="@+id/Email"
+            android:layout_height="wrap_content"
+            android:text="Kudlayra@gmail.com"
+            android:textSize="30sp"></TextView>
+        <TextView
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Email"
+            android:textSize="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Руслан"></TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
